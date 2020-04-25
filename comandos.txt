@@ -1,0 +1,43 @@
+git init (na pasta onde tem as coisas)
+
+git status (mostra em vermelho os arquivos não monitorados e verde os monitorados)
+
+git add *nome arquivo* ai ele vai começar a monitorar (git add .) monitora tudo da pasta
+
+git rm --cached <arquivo> (tira do monitoramento o arquivo)
+
+git commit -m "Mensagem olá" (faz o commit e é bom colocar o que foi feito, ex: atualizei a tabela compras)
+* Não commitar codigos que não rodam*
+
+Antes de qualquer interação com o git, você precisa informar quem é você para que ele armazene corretamente os dados do autor de cada uma das alterações no código.
+
+git config --local user.name "Seu nome aqui"
+git config --local user.email "seu@email.aqui"
+
+git log (msotra informações dos commites, quem fez, quando, mensagem ,etc)
+git log --oneline (é o log de forma resumida)
+git log --p (mostra também as alterações feitas)
+https://devhints.io/git-log-format (mais opções) git log --pretty="format:%H" etc etc
+
+git config --local/global (local só do repositório e global todos)
+
+definir o nome e email da pessoa que executa commits no repositório local atual
+git config user.name (mostra o nome)
+git config user.email (mostra o email)
+
+.gitignore (criar o .gitignore e por o nome /pasta ou arquivo.foramto e Para não aparecer alguma pasta ou arquivo em vermelho)
+depois é necessário dar um git add .gitignore e commit nele para sumir
+
+git init --bare (criando um repositório que serve como servidor)
+
+git remote add local D:/TI/Git/servidor (adiciona um server remoto com endereço na máquina atual)
+git remote (lista os servidores do local)
+git remote -v (mostra o endereço para onde ele vai pegar os dados *fetch* e para onde vai mandar os dados *push*)
+
+
+git clone D:/TI/Git/servidor (clona para o diretor atual o que está no endereço marcado)
+
+git remote rename antigo novo (muda o nome)
+git push local master (pega o que ta na pasta local e joga pra pasta servidor)
+git pull local master(pega do servidor e traz os dados)
+ 
