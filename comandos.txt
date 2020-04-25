@@ -9,7 +9,7 @@ git rm --cached <arquivo> (tira do monitoramento o arquivo)
 git commit -m "Mensagem olá" (faz o commit e é bom colocar o que foi feito, ex: atualizei a tabela compras)
 * Não commitar codigos que não rodam*
 
-Antes de qualquer interação com o git, você precisa informar quem é você para que ele armazene corretamente os dados do autor de cada uma das alterações no código.
+Antes de qualquer interação com o git, você precisa informar quem é você para que ele armazene correta ente os dados do autor de cada uma das alterações no código.
 
 git config --local user.name "Seu nome aqui"
 git config --local user.email "seu@email.aqui"
